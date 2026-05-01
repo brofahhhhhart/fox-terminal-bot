@@ -50,7 +50,7 @@ from typing import Optional
 # ══════════════════════════════════════════════════════════════════════════════
 #  CONFIGURAÇÕES GLOBAIS
 # ══════════════════════════════════════════════════════════════════════════════
-BOT_TOKEN           = "MTQ5OTQ0NTAyMTY3NjY3MTE0OA.GSIIax.zpPW3HOky6fuRdDMWNLtmuPxNuwTmggrTjWW-E"
+BOT_TOKEN           = os.environ.get('BOT_TOKEN')
 CARGO_AUTORIZADO_ID = 1465895263582294271   # Apenas este cargo pode usar o bot
 CATEGORIA_NOME      = "TERMINAL"            # Categoria onde mkdir cria canais
 LOG_CANAL_NOME      = "fox-logs"            # Canal de logs (criado automaticamente)
