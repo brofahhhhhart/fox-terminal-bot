@@ -2014,7 +2014,7 @@ async def on_ready():
 #  INICIAR
 # ══════════════════════════════════════════════════════════════════════════════
 if __name__ == "__main__":
-    if BOT_TOKEN == "MTQ5OTQ0NTAyMTY3NjY3MTE0OA.GSIIax.zpPW3HOky6fuRdDMWNLtmuPxNuwTmggrTjWW-E":
+    if BOT_TOKEN == os.environ.get('BOT_TOKEN')
         print(f"\n{E_ERR} ERRO: Substitua SEU_TOKEN_AQUI pelo seu token real!\n")
         sys.exit(1)
     print(f"{E_ROCKET} Iniciando Fox Terminal Bot...")
